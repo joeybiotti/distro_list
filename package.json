@@ -1,0 +1,20 @@
+{
+  "name": "distro_list",
+  "version": "1.0.0",
+  "description": "web based alterntive to .xlsx distro list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Biotti",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "sass": "^1.3.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
