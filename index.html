@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,56 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Client Distro List</title>
 </head>
+
 <body>
     <h1 class="text-center">Client Distro List</h1>
-
     <div class="container">
         <div>
-            <button id="btn">Click Me</button>
+            <p>Sort by whatever you want:</p>
+
+            <button class="btn" id="codeBtn">Code</button>
+            <button class="btn" id="companyBtn">Company Name</button>
+            <button class="btn" id="cRepBtn">C. Rep</button>
+            <button class="btn" id="dRepBtn">D. Rep</button>
+            <button class="btn" id="hRepBtn">H. Rep</button>
+            <button class="btn" id="csRepBtn">C.S Rep</button>
+            <button class="btn" id="tRepBtn">T. Rep</button>
+
+            <table id="table">
+                <tr>
+                    <th>Code</th>
+                    <th>Co. Name</th>
+                    <th>C. Rep</th>
+                    <th>D. Rep</th>
+                    <th>H. Rep</th>
+                    <th>C.S. Rep</th>
+                    <th>T. Rep</th>
+                </tr>
+                <tr>
+                    <td>ACME</td>
+                    <td>Acme Inc.</td>
+                    <td>Bill S.</td>
+                    <td>Jane D.</td>
+                    <td>Reggie S.</td>
+                    <td>Sammy D.</td>
+                    <td>Ed N.</td>
+                </tr>
+                <tr>
+                    <td>ACE</td>
+                    <td>Ace Chemicals.</td>
+                    <td>Jim S.</td>
+                    <td>Jane D.</td>
+                    <td>Reggie S.</td>
+                    <td>Sammy D.</td>
+                    <td>Rob D.</td>
+                </tr>
+            </table>
         </div>
-
-        <div id="output"></div>
     </div>
-    <!-- list will output here. -->
-
     <!-- main.js -->
     <script src="scripts/main.js"></script>
     <!-- jquery -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 </body>
+
 </html>

@@ -1,35 +1,37 @@
-let btn = document.getElementById('btn');
-const output = document.getElementById('output');
-
-document.write('The output will be supplied via JSON. Everything will be JavaScipt in this bitch.');
-
-function seeStonerMetal() {
-
-	moreText = `<div>
-					<h2>This click shit works.</h2>
-				</div>`
-
-	output.innerHTML += moreText
-};
+let codeBtn = document.getElementById('codeBtn');
+let companyBtn = document.getElementsByName('companyBtn');
+let cRepBtn = document.getElementById('cRepBtn');
+let dRepBtn = document.getElementsByName('dRepBtn');
+let hRepBtn = document.getElementsByName('hRepBtn');
+let csRepBtn = document.getElementsByName('csRepBtn');
+let tRepBtn = document.getElementsByName('tRepBtn');
 
 
-const bands = [{
-        name: "Bongripper",
-        description: "Satanic Doom Metal",
-    },
-    {
-        name: "Weedeater",
-        description: "North Carolina Stoner Metal",
-    },
-    {
-        name: "Bongzilla",
-        description: "666lb. Bong Session"
-    },
-    {
-        name: "Sleep",
-        description: "The OGs."
-    },
-];
+// event listeners-- sort functionality will live here... eventually. 
+codeBtn.addEventListener('click', function(){
+	console.log('codeBtn clicked')
+});
 
-btn.addEventListener("click", seeStonerMetal);
+companyBtn.addEventListener('click', function(){
+	console.log('companyBtn clicked');
+});
 
+cRepBtn.addEventListener('click', function(){
+	console.log('clms rep btn clicked');
+});
+
+dRepBtn.addEventListener('click', function(){
+	console.log('deter rep btn clicked');
+});
+
+hRepBtn.addEventListener('click', function(){
+	console.log('hear rep btn clicked');
+});
+
+csRepBtn.addEventListener('click', function(){
+	console.log('cs rep btn clicked');
+});
+
+tRepBtn.addEventListener('click', function(){
+	console.log('tax rep btn clicked');
+});
