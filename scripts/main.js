@@ -35,3 +35,8 @@ csRepBtn.addEventListener('click', function(){
 tRepBtn.addEventListener('click', function(){
 	console.log('t rep btn clicked.')
 });
+
+//fetch to get json -- dummy data for now
+fetch('https://jsonplaceholder.typicode.com/posts')
+	.then(response => response.json())
+	.then(json => console.log(json))
