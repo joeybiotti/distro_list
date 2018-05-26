@@ -1,37 +1,37 @@
 let codeBtn = document.getElementById('codeBtn');
-let companyBtn = document.getElementsByName('companyBtn');
+let companyBtn = document.getElementById('companyBtn');
 let cRepBtn = document.getElementById('cRepBtn');
-let dRepBtn = document.getElementsByName('dRepBtn');
-let hRepBtn = document.getElementsByName('hRepBtn');
-let csRepBtn = document.getElementsByName('csRepBtn');
-let tRepBtn = document.getElementsByName('tRepBtn');
+let dRepBtn = document.getElementById('dRepBtn');
+let hRepBtn = document.getElementById('hRepBtn');
+let csRepBtn = document.getElementById('csRepBtn');
+let tRepBtn = document.getElementById('tRepBtn');
 
 
-// event listeners-- sort functionality will live here... eventually. 
+// event listeners-- sort functionality will live here... eventually.
 codeBtn.addEventListener('click', function(){
-	console.log('codeBtn clicked')
+	console.log('code btn clicked')
 });
 
 companyBtn.addEventListener('click', function(){
-	console.log('companyBtn clicked');
+	console.log('company btn clicked.')
 });
 
 cRepBtn.addEventListener('click', function(){
-	console.log('clms rep btn clicked');
+	console.log('c rep btn clicked.')
 });
 
 dRepBtn.addEventListener('click', function(){
-	console.log('deter rep btn clicked');
+	console.log('d rep btn clicked.')
 });
 
 hRepBtn.addEventListener('click', function(){
-	console.log('hear rep btn clicked');
+	console.log('h rep btn clicked.')
 });
 
 csRepBtn.addEventListener('click', function(){
-	console.log('cs rep btn clicked');
+	console.log('cs rep btn clicked.')
 });
 
 tRepBtn.addEventListener('click', function(){
-	console.log('tax rep btn clicked');
+	console.log('t rep btn clicked.')
 });
