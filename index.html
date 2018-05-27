@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/html" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Client Distro List</title>
 </head>
@@ -14,45 +14,21 @@
     <h1 class="text-center">Client Distro List</h1>
     <div class="container">
         <div>
-            <p>Sort by whatever you want:</p>
+            <p class="text-center">Sort by whatever you want:</p>
 
-            <button class="btn" id="codeBtn">Code</button>
-            <button class="btn" id="companyBtn">Company Name</button>
-            <button class="btn" id="cRepBtn">C. Rep</button>
-            <button class="btn" id="dRepBtn">D. Rep</button>
-            <button class="btn" id="hRepBtn">H. Rep</button>
-            <button class="btn" id="csRepBtn">C.S Rep</button>
-            <button class="btn" id="tRepBtn">T. Rep</button>
+            <button class="btn btn-danger" id="codeBtn">Code</button>
+            <button class="btn btn-success" id="companyBtn">Company Name</button>
+            <button class="btn btn-primary" id="cRepBtn">C. Rep</button>
+            <button class="btn btn-warning" id="dRepBtn">D. Rep</button>
+            <button class="btn btn-info" id="hRepBtn">H. Rep</button>
+            <button class="btn btn-dark" id="csRepBtn">C.S Rep</button>
+            <button class="btn btn-light" id="tRepBtn">T. Rep</button>
 
-            <table id="table">
-                <tr>
-                    <th>Code</th>
-                    <th>Co. Name</th>
-                    <th>C. Rep</th>
-                    <th>D. Rep</th>
-                    <th>H. Rep</th>
-                    <th>C.S. Rep</th>
-                    <th>T. Rep</th>
-                </tr>
-                <tr>
-                    <td>ACME</td>
-                    <td>Acme Inc.</td>
-                    <td>Bill S.</td>
-                    <td>Jane D.</td>
-                    <td>Reggie S.</td>
-                    <td>Sammy D.</td>
-                    <td>Ed N.</td>
-                </tr>
-                <tr>
-                    <td>ACE</td>
-                    <td>Ace Chemicals.</td>
-                    <td>Jim S.</td>
-                    <td>Jane D.</td>
-                    <td>Reggie S.</td>
-                    <td>Sammy D.</td>
-                    <td>Rob D.</td>
-                </tr>
-            </table>
+            <div class="container">
+                <table class="mt-5" id="table">
+                    <div id="output"></div>
+                </table>
+            </div>
         </div>
     </div>
     <!-- main.js -->
