@@ -49,8 +49,20 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 	})
 	.then(function(json){
 		console.log(json)
-		for(var i = 0; i < json.length; i++){
-			let output = document.getElementById('output');
-			output.innerHTML = `<p>` + json[i].body +`</p>`
+		for(i = 0; i < json.length; i++){
+			let obj = json[i]
+			// console.log(obj)
+			let objTitle = obj.title;
+			console.log(objTitle);
+			let objBody = obj.body;
+			console.log(objBody);
+
+			var text = `<h1>${objTitle}</h1>
+						<hr>
+						<h6>${objBody}</h6>
+						<br>`;
+
+			document.getElementById('output').innerHTML += text;
+
 		}
 	});
