@@ -57,10 +57,14 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 			let objBody = obj.body;
 			console.log(objBody);
 
-			var text = `<h1>${objTitle}</h1>
-						<hr>
-						<h6>${objBody}</h6>
-						<br>`;
+			var text = `<table border= '1'>
+							<th>Test 1</th>
+							<th>Test 2</th>
+							<tr>
+								<td>${objTitle}</td>
+								<td>${objBody}</td>
+							</tr>
+						</table>`;
 
 			document.getElementById('output').innerHTML += text;
 
