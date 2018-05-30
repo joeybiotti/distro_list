@@ -1,3 +1,15 @@
 body{
     background: #DCDC;
 }
+
+td{
+    th{
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+    }
+}
+
+th{
+    width: 50%;
+}
