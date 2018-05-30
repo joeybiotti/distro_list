@@ -1,3 +1,23 @@
 body{
-    background: #DCDC;
+    background: #FFFFF3;
+}
+
+td{
+    th{
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+    }
+}
+
+.left{
+    width: 25%;
+    color: blue;
+    background: #DDD;
+}
+
+.right{
+    width: 50%;
+    color: red;
+    background: #DDD;
 }

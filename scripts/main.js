@@ -8,31 +8,31 @@ let tRepBtn = document.getElementById('tRepBtn');
 
 
 // event listeners-- sort functionality will live here... eventually.
-codeBtn.addEventListener('click', () =>{
+codeBtn.addEventListener('click', () => {
 	console.log('code btn clicked')
 });
 
-companyBtn.addEventListener('click', () =>{
+companyBtn.addEventListener('click', () => {
 	console.log('company btn clicked.')
 });
 
-cRepBtn.addEventListener('click', () =>{
+cRepBtn.addEventListener('click', () => {
 	console.log('c rep btn clicked.')
 });
 
-dRepBtn.addEventListener('click', () =>{
+dRepBtn.addEventListener('click', () => {
 	console.log('d rep btn clicked.')
 });
 
-hRepBtn.addEventListener('click', () =>{
+hRepBtn.addEventListener('click', () => {
 	console.log('h rep btn clicked.')
 });
 
-csRepBtn.addEventListener('click', () =>{
+csRepBtn.addEventListener('click', () => {
 	console.log('cs rep btn clicked.')
 });
 
-tRepBtn.addEventListener('click', () =>{
+tRepBtn.addEventListener('click', () => {
 	console.log('t rep btn clicked.')
 });
 
@@ -44,24 +44,21 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 */
 
 fetch('https://jsonplaceholder.typicode.com/posts')
-	.then(function(res){
+	.then(function (res) {
 		return res.json();
 	})
-	.then(function(json){
+	.then(function (json) {
 		console.log(json)
-		for(i = 0; i < json.length; i++){
+		let obj = {"table":"tests", "limit": 20};
+		let text = '';
+		for (i = 0; i < json.length; i++) {
 			let obj = json[i]
-			// console.log(obj)
-			let objTitle = obj.title;
-			console.log(objTitle);
-			let objBody = obj.body;
-			console.log(objBody);
 
-			var text = `<h1>${objTitle}</h1>
-						<hr>
-						<h6>${objBody}</h6>
-						<br>`;
+			text += `<table>`
 
+			text += `<tr><td class="left">${obj.title}</td><td class="right">${obj.body}</td></tr>`;
+
+			text += `</table>`
 			document.getElementById('output').innerHTML += text;
 
 		}
