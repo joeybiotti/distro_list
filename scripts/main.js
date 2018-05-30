@@ -61,8 +61,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 							<th>Test 1</th>
 							<th>Test 2</th>
 							<tr>
-								<td>${objTitle}</td>
-								<td>${objBody}</td>
+								<td class="right">${objTitle}</td>
+								<td class="left">${objBody}</td>
 							</tr>
 						</table>`;
 

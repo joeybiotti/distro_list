@@ -1,5 +1,5 @@
 body{
-    background: #DCDC;
+    background: #FFFFF3;
 }
 
 td{
@@ -10,6 +10,14 @@ td{
     }
 }
 
-th{
+.left{
+    width: 25%;
+    color: blue;
+    background: #DDD;
+}
+
+.right{
     width: 50%;
+    color: red;
+    background: #DDD;
 }
