@@ -2,11 +2,15 @@ body{
     background: #FFFFF3;
 }
 
+table{
+    border: 1px solid #000000;  
+}
+
 td{
     th{
         border: 1px solid #000000;
         text-align: left;
-        padding: 8px;
+        border-bottom: 2px solid #000000;
     }
 }
 
@@ -14,6 +18,7 @@ td{
     width: 25%;
     color: blue;
     background: #DDD;
+    border: 1px solid #000000;
 }
 
 .right{
