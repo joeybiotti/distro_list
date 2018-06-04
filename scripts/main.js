@@ -37,13 +37,12 @@ tRepBtn.addEventListener('click', () => {
 });
 
 //fetch to get json -- dummy data for now
-fetch('https://jsonplaceholder.typicode.com/posts')
+fetch('https://jsonplaceholder.typicode.com/users')
 	.then(function (res) {
 		return res.json();
 	})
 	.then(function (json) {
 		console.log(json)
-		let obj = {"table":"tests", "limit": 20};
 		let text = [];
 
 		text += `<th>Area 1</th><th>Area 2</th>`
@@ -51,7 +50,11 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 		for (i = 0; i < json.length; i++) {
 			let obj = json[i]
 
-			text += `<tr><td class="left">${obj.title}</td><td class="right">${obj.body}</td></tr>`;
+			text += `<tr>
+						<td class="left">${obj.name}</td>
+						<td class="right">${obj.company.name}</td>
+						<td>${obj.website}</td>
+					</tr>`;
 
 			document.getElementById('output').innerHTML += `<table>` + text + `</table>`;
 
