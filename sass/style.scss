@@ -2,25 +2,24 @@ body{
     background: #FFFFF3;
 }
 
+.btn{
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
 table{
-    border: 1px solid #000000;  
+    border: 1px solid #000000;
+    width: 100%;
+    margin: auto;
 }
 
 th{
     border: 1px solid #000000;
-    text-align: left;
+    text-align: center;
     border-bottom: 2px solid #000000;
 }
 
-.left{
-    width: 25%;
-    color: blue;
-    background: #DDD;
+tr{
     border: 1px solid #000000;
-}
-
-.right{
-    width: 50%;
-    color: red;
-    background: #DDD;
+    text-align: center;
 }
